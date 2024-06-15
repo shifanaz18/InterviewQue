@@ -1,0 +1,10 @@
+promise.all -([p1,p2,p3])-(3s,1s,2s)-if all of then is succes it will return you after 3s all of the promise [val1,val2,val3]
+-it will wait for all api calls to finish
+-but if any of them fails it will not move ahead then it will quickly returns the result
+promise.allsetteled -([p1,p2,p3])-(3s,1s,2s)- in success case same as promise.all but in failure case it will still wait for all the api finished [val1,err,val2]
+promise.race-([p1,p2,p3])-takes(3s,1s,2s)-it will retuen result of first settled prmise ans-val32
+Promise.any-([p1,p2,p3]) -(3s,1s,2s)it will wait for first promise to be success ans=val2
+if p2 gets rejected it will wait for p3 if p2 reject then wait for p1 (seeking 1st success)
+first it will wait for sucees if all fails returns aggregated errs[eer1,err2,err3]
+
+
