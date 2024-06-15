@@ -1,16 +1,18 @@
 function sum() {
   const obj = {};
-  return function (a, b) {
+  function memo(a, b) {
     console.log("obj is", obj);
     if (!obj[`${a},${b}`]) {
       console.log("inside if");
       obj[`${a},${b}`] = a + b;
     }
     return obj[`${a},${b}`];
-  };
+  }
+  memo();
 }
 
-const memoizesSum = sum();
+// const memoizesSum = sum();
+// console.log(memoizesSum)
 
-console.log(memoizesSum(3, 4));
-console.log(memoizesSum(3, 4));
+console.log(sum(3, 4));
+console.log(sum(3, 4));

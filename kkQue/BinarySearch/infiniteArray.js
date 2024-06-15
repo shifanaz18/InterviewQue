@@ -11,7 +11,7 @@ const boxLength = (arr, target) => {
     end = end + (end - start + 1) * 2;
     // console.log(temp);
     start = temp;
-    console.log(start, end);
+    // console.log(start, end);
   }
   //
   return search(arr, target, start, end);
@@ -20,15 +20,6 @@ const boxLength = (arr, target) => {
 const search = (arr, target, start, end) => {
   while (start <= end) {
     mid = Math.floor((start + end) / 2);
-    // console.log(
-    //   "binary ",
-    //   start,
-    //   end,
-    //   arr.length,
-    //   arr[mid],
-    //   mid,
-    //   arr[mid] === target
-    // );
     if (target === arr[mid]) {
       return mid;
     } else if (target > arr[mid]) {
@@ -39,7 +30,4 @@ const search = (arr, target, start, end) => {
   }
 };
 
-findIndex(
-  [1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
-  19
-);
+findIndex([1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], 1);

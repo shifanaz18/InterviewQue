@@ -1,3 +1,5 @@
+//mountain array is also called bitonic array
+
 const peakIndexInMountainArray = (arr) => {
   let start = 0;
   let end = arr.length - 1;

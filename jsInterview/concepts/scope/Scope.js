@@ -77,15 +77,17 @@ let and const have block scope
 // let count = 10;
 // var count2 = 900;
 
-function test() {
-  console.log(a, b, c);
+// function test() {
+//   console.log(a, b, c);
 
-  let a = 1;
-  const b = 2;
-  var c = 3;
+//   let a = 1;
+//   const b = 2;
+//   var c = 3;
 
-  //var is hoisted and let and const variable are too hoisted but in temporal dead zone
-  //   temporal dead zone is a state where variable are in scope but not yet declared
-}
+//   //var is hoisted and let and const variable are too hoisted but in temporal dead zone
+//   //   temporal dead zone is a state where variable are in scope but not yet declared
+// }
 
-test();
+// test();
+
+//------------//--------------

@@ -9,3 +9,4 @@ function findMax(arr) {
 }
 
 console.log(findMax([1, 89, 105, 8, 45]));
+[(0, 10, 5, 2)]

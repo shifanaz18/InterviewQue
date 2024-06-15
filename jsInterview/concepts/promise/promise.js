@@ -8,7 +8,7 @@ createOrder(cart, function (orderId) {
 });
 //so the issue is INVERSION OF CONTROL-we have passed this function to createOrder api but what if the api never calls a function back or it might call it twice.like this createorder service can be written by other developer or team so we cant blindly trust to this api
 
-//like i this case we are just giving the control of our program to some other part of our code which we are not aware of
+//like in this case we are just giving the control of our program to some other part of our code which we are not aware of
 
 //to avoid the we simply create a api which doesnt take callback its simply take cart and return some promise
 
